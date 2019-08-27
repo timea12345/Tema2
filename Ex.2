@@ -1,0 +1,25 @@
+public class Ascii {
+    public static void main(String[] args) {
+     String a = "AB";
+     String b = "ab";
+     int valueA = 0;
+     int valueB = 0;
+     int i;
+
+     for (i = 0; i <= a.length()-1; i++ ) {
+         valueA += a.charAt(i);
+     }
+
+     for (i = 0; i <= b.length()-1; i++) {
+         valueB += b.charAt(i);
+     }
+
+     if (valueA > valueB) {
+         System.out.println("Value of a is bigger");
+     } else if (valueB > valueA) {
+         System.out.println("Value of b is bigger");
+     } else {
+         System.out.println("They are equal");
+     }
+    }
+}
