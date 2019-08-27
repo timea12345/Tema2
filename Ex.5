@@ -1,0 +1,11 @@
+public class NumereTrunchiate {
+    public static void main(String[] args) {
+        int a = 235693;
+        int copyOfA = a;
+
+        while ((a % 10) % 3 == 0) {
+            System.out.print(copyOfA % 10);
+            a /= 10;
+        }
+    }
+}
