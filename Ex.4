@@ -1,0 +1,18 @@
+public class NumarSiAdaos {
+    public static void main(String[] args) {
+        int numar = 10;
+        int nrDivizibil = numar;
+        int adaos = -3;
+        int nrAdunari = 0;
+
+        System.out.println("Numar = " + numar + "  Adaos = " + adaos);
+
+        while ((nrDivizibil % 13) != 0) {
+            nrDivizibil += adaos;
+            nrAdunari++;
+        }
+
+        System.out.println("Numarul de adaugari este: " + nrAdunari);
+        System.out.println("Numarul divizibil cu 13 la care s-a ajuns este: " + nrDivizibil);
+    }
+}
