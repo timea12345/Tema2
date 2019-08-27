@@ -1,0 +1,26 @@
+// Problema 1. Rezolvarea problemei cu if
+
+public class Operations1 {
+    public static void main(String[] args) {
+        int a = 10, b = 3;
+        char operator = '/';
+
+        if (operator == '+') {
+            System.out.println("Result a + b = " + (a+b));
+        } else if (operator == '-') {
+            System.out.println("Result a - b = " + (a-b));
+        } else if (operator == '/') {
+            System.out.println("Result a / b = " + ((float)a/b));
+        } else if (operator == '*') {
+            System.out.println("Result a * b = " + (a*b));
+        } else if (operator == '%') {
+            System.out.println("Result a % b = " + (a%b));
+        } else if (operator == '|') {
+            System.out.println("Result a | b = " + (a|b));
+        } else if (operator == '&') {
+            System.out.println("Result a & b = " + (a&b));
+        } else {
+            System.out.println("Unrecognised operator! Try else!");
+        }
+    }
+}
