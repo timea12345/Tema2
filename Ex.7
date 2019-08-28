@@ -1,0 +1,32 @@
+public class Main {
+    public static void main(String[] args) {
+        String nume = "Timea";
+        int age = 25;
+        int nrJucarii = 1;
+        int jucariiNoi = 3;
+
+        Copil copilUnu = new Copil();
+
+        copilUnu.bunaZiua();
+        copilUnu.salut(nume);
+        System.out.println("Numarul actual de jucarii: " + copilUnu.jucarieNoua(nrJucarii, jucariiNoi));
+
+
+    }
+}
+
+//clasa Copil
+public class Copil {
+
+    void bunaZiua () {
+        System.out.println("Buna Ziua");
+    }
+
+    void salut (String a) {
+        System.out.println("Salut, " + a);
+    }
+
+    int jucarieNoua (int jucarii, int jucariiNoi) {
+       return (jucarii+jucariiNoi);
+    }
+}
